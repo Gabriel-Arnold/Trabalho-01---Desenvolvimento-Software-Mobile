@@ -20,6 +20,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -53,10 +54,6 @@ fun caixinha() {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text(
-                    text = "Criar Caixinha",
-                    fontSize = 16.sp
-                )
 
                 Spacer(
                     modifier = Modifier.height(6.dp)
@@ -65,13 +62,14 @@ fun caixinha() {
                 Button(
                     onClick = {},
                     modifier = Modifier
-                        .width(65.dp)
-                        .height(35.dp),
-                    shape = RoundedCornerShape(0.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White
-                    )
+                        .width(140.dp)
+                        .height(45.dp),
+                    shape = RoundedCornerShape(12.dp)
                 ) {
+                    Text(
+                        text = "Criar Caixinha",
+                        fontWeight = FontWeight.Bold
+                    )
                 }
             }
         }

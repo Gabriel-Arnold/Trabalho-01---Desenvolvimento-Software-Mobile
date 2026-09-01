@@ -56,7 +56,6 @@ fun clube() {
             Button(
                 onClick = {},
                 shape = RoundedCornerShape(12.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = Color.Magenta),
                 modifier = Modifier.height(50.dp).width(250.dp)
             ) {
                 Text(text = "Assinar", color = Color.White, fontSize = 20.sp)
