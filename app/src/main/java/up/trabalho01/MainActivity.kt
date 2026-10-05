@@ -14,9 +14,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import up.trabalho01.ui.theme.Trabalho01Theme
 import up.trabalho01.ui.theme.components.NavBar
 import up.trabalho01.ui.theme.screens.caixinha
+import up.trabalho01.ui.theme.screens.cartao
 import up.trabalho01.ui.theme.screens.clube
 import up.trabalho01.ui.theme.screens.home
 
@@ -46,7 +46,7 @@ fun mainScreen() {
         Box(modifier = Modifier.padding(paddingValues)) {
             when (selectedScreen) {
                 "home" -> home()
-                "clube" -> clube()
+                "clube" -> cartao()
                 "caixinha" -> caixinha()
             }
         }
